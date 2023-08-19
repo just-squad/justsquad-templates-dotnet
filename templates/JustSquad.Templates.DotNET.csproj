@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <PackageType>Template</PackageType>
+        <IsPackable>true</IsPackable>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageId>JustSquad.Templates.DotNET</PackageId>
+        <Title>JustSquad DotNET templates.</Title>
+        <Authors>JustSquad</Authors>
+        <Description>Шаблоны DotNET проектов команды JustSquad</Description>
+        <PackageTags>dotnet-new;templates;dotnet-templates;microservices;</PackageTags>
+        <NoDefaultExcludes>true</NoDefaultExcludes>
+        <IncludeContentInPack>true</IncludeContentInPack>
+        <IncludeBuildOutput>false</IncludeBuildOutput>
+        <ContentTargetFolders>content</ContentTargetFolders>
+        <NoWarn>$(NoWarn);NU5128</NoWarn>
+        <PackageReleaseNotes>
+            1.0.0 - Создание шаблона проекта микросервиса
+        </PackageReleaseNotes>
+        <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+        <PackageReadmeFile>Readme.md</PackageReadmeFile>
+        <Configurations>Debug;Release;PushPackageInNuget</Configurations>
+        <Platforms>AnyCPU</Platforms>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Content Include="service-template\**\*"
+                 Exclude="service-template\**\bin\**;service-template\**\obj\**;service-template\**\.idea\**" />
+        <Compile Remove="**\*" />
+    </ItemGroup>
+
+</Project>

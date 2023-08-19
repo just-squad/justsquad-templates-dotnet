@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="../JustSquad.Service.Template.ApplicationServices/JustSquad.Service.Template.ApplicationServices.csproj"/>
+        <ProjectReference Include="../JustSquad.Service.Template.DataAccess/JustSquad.Service.Template.DataAccess.csproj"/>
+        <ProjectReference Include="../JustSquad.Service.Template.Migrations/JustSquad.Service.Template.Migrations.csproj"/>
+    </ItemGroup>
+
+</Project>
